@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
          * bindService(intent, conn, Context.BIND_AUTO_CREATE);
          */
         val intent = Intent()
-        intent.action = "com.example.aidl_server.remote"
+        intent.action = "android.intent.action.remote"
         intent.setPackage("com.example.aidl_server")
         bindService(intent, connection, Context.BIND_AUTO_CREATE)
         Log.d(TAG, "bindService")
